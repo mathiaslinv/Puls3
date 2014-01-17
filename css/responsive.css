@@ -4,15 +4,59 @@
 	margin: 0 auto;
 	max-width: 1200px;
 	}
-	#bienvenida{
+	aside{
 		display: block;
-		border-bottom: 1px solid #CCC;
 		float: right;
 		margin-right: 2%;
 		width: 25%;
 	}
+	aside div{
+		margin-bottom: 2em;
+	}
+	#actividad .item_actividad{
+		border-bottom: 1px solid #CCC;
+		margin-bottom: 0.5em;
+		padding-bottom: 0.3em;
+	}
+	#actividad h2 {
+		background: #de5659;
+		color: #fff; 
+		font-weight: normal;
+		text-align: center;
+	}
+	#actividad p {
+		color: #999999;
+		display: inline-block;
+		margin: 0;
+		width: 80%;
+		
+	}
+	#actividad a {
+		background: #de5659;
+		border-radius: 4px;
+		color: #fff;
+		float: left;
+		font-size: 0.8em;
+		display: inline-block;
+		margin-right: 7px;
+		margin-top: 10px;
+		text-align: center;
+		text-decoration: none;
+		padding: 6px 4px;
+		position: relative;
+
+	}
+	#actividad a:after {
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #de5659;
+		content: "";
+		left: 20px;
+		position: absolute;
+		top: 99%;
+	}
 	#bienvenida h2{
-		color: #434343;
+		color: #606061;
 	}
 	#bienvenida #mensaje_registro,
 	#bienvenida #registro {
@@ -33,4 +77,5 @@
 	#contenido {
 		width: 70%;
 	}
+
 }

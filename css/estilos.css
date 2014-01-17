@@ -12,6 +12,9 @@
 a {
 	color: #dd4f24;
 }
+aside {
+	display: none;
+}
 body {
 	background: #EFEFEF;
 	color: #4C4C4C;
@@ -35,7 +38,7 @@ header {
 	background: #434343; 
 	color: white;
 	margin: 0 ;
-	padding: 0.5em;
+	padding: 0.5em 0.5em 1.3em 0.5em;
 	position: relative;
 }
 header figure, header h1 {
@@ -97,7 +100,7 @@ nav ul{
 }
 nav ul li {
 	display: inline-block;
-	margin: 0 1.2em 0 0;
+	margin: 0 1em;
 	vertical-align: top;
 }
 nav ul li a {
@@ -109,7 +112,9 @@ nav ul li a {
 nav #flechita_nav a {
 	background: #22bce0;
 	border-radius: 0 2px 2px 4px;
+	left: 0;
 	padding: 0.5em 0;
+	position: absolute;
 	text-decoration: none;
 
 }
@@ -124,6 +129,7 @@ nav #publicar_nav {
 	border-radius: 0 0 4px 0;
 	float: right;
 	margin-right: 0;
+	padding-left: 9.5px;
 	padding-right: 1.5em;
 	position: relative;
 }
@@ -142,15 +148,13 @@ nav #publicar_nav a {
 	text-decoration: none;
 }
 
-#bienvenida {
-	display: none;
-}
 #contenido {
 	margin: 1em;
 }
 #contenido .item {
 	background: white;
 	border-bottom: 3px #22bce0 solid;
+	border-radius: 5px;
 	margin-bottom: 3em;
 	min-height: 128px;
 	position: relative;	
@@ -206,6 +210,7 @@ nav #publicar_nav a {
 	margin: 0 1rem 0 0;
 }
 #contenido .item .imagen_item img {
+	border-radius: 5px 0 0 0;
 	width: 96px;
 
 }
@@ -247,4 +252,23 @@ nav #publicar_nav a {
 #contenido .item .votacion .up:after{
 	color: green;
 	content: "\e601";
+}
+#home {
+	background-color: #22bce0;
+	bottom: 0;
+	border-radius: 30px 0 0 0;
+	color: #fff;
+	padding-left: 26px;
+	padding-right: 9.5px;
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+}
+#home:after {
+	content: "\e600";
+	font-family: "icomoon";
+	font-size: 9px;
+	opacity: 0.5;
+	padding-left: 7px;
+	padding-right: 18px;
 }
